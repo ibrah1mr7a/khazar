@@ -1,0 +1,87 @@
+@media (min-width: 769px){
+.text{
+    display: none;
+}
+.body{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+
+}
+.book{
+    border: 3px solid gray;
+    display: grid;
+    max-width: 1306px;
+    width: 100%;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    padding: 20px;
+    
+}
+.rua{
+    background-color: white;
+    box-shadow: 0 4px 8px black;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+
+}
+.rua img{
+    width: 100%;
+    height: 300px;
+    border-radius: 4px;
+
+}
+.ruan{
+    background-color: white;
+    box-shadow: 0 4px 8px black;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+
+}
+.ruan img{
+    width: 100%;
+    height: 300px;
+    border-radius: 4px;
+
+}
+a{
+    text-decoration: none;
+    color: blue;
+    font-size: large;
+    text-align: center;
+    align-items: center;
+    display: inline-block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+a:hover{
+    text-decoration: underline;
+    color: crimson;
+}
+}
+@media ( max-width: 768px){
+    .book{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+        .ruan img{
+            width: 350px;
+        }
+        .rua img{
+            width: 350px;
+        }
+}
+@media (max-width: 430px) {
+    .book{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .text{
+        display: none;
+    }
+    
+}
